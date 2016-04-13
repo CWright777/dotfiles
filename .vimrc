@@ -3,7 +3,8 @@ filetype off    " Required
 
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
-
+ 
+Plugin 'scrooloose/nerdtree'
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'gmarik/vundle'    " Required
 Plugin 'easymotion/vim-easymotion'
