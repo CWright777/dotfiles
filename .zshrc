@@ -84,4 +84,5 @@ KEYTIMEOUT=1
 alias zshconfig="vim ~/.zshrc"
 alias vimconfig="vim ~/.vimrc"
 alias tmuxconfig="vim ~/.tmux.conf"
+alias slateconfig="vim ~/.slate"
 # alias ohmyzsh="mate ~/.oh-my-zsh"

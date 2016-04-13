@@ -9,8 +9,8 @@ alias hyper ctrl;shift;alt;cmd
 
 ## Application aliases
 alias browser   'Google Chrome'
-alias editor    'Sublime Text 2'
-alias terminal  'iTerm'
+alias editor    'Sublime Text'
+alias terminal  'iTerm2'
 
 ## Position aliases
 alias full         move screenOriginX;screenOriginY                screenSizeX;screenSizeY
