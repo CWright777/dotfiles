@@ -106,4 +106,6 @@ let g:molokai_original = 1
 let g:airline#extensions#tabline#enabled = 2
 
  " Highlight searched phrases
+set hlsearch
+" search as characters are entered
 set incsearch
