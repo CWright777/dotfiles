@@ -21,6 +21,7 @@ Plugin 'burnettk/vim-angular'
 Plugin 'tpope/vim-fugitive'
 Plugin 'vim-airline/vim-airline'
 Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'repmo.vim'
 
 filetype plugin indent on " Required
 :set noswapfile
@@ -109,3 +110,8 @@ let g:airline#extensions#tabline#enabled = 2
 set hlsearch
 " search as characters are entered
 set incsearch
+
+" tell it to use an undo file
+set undofile
+" set a directory to store the undo history
+set undodir=/home/yourname/.vimundo/
