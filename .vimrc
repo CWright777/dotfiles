@@ -22,6 +22,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'vim-airline/vim-airline'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'repmo.vim'
+Plugin 'matthewsimo/angular-vim-snippets'
 
 filetype plugin indent on " Required
 :set noswapfile
