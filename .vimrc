@@ -100,9 +100,15 @@ let g:ctrlp_cmd = 'CtrlPLastMode'
 let g:ctrlp_extensions = ['buffertag', 'tag', 'line', 'dir']
 
 "Enable Molokai theme
-:colorscheme molokai
+":colorscheme molokai
 "Add Molokai background color
-let g:molokai_original = 1
+"let g:molokai_original = 1
+Bundle 'https://github.com/freeo/vim-kalisi'
+
+colorscheme kalisi
+set background=dark
+
+set t_Co=256
 
 " Enable vim-airline
 let g:airline#extensions#tabline#enabled = 2
@@ -116,3 +122,20 @@ set incsearch
 set undofile
 " set a directory to store the undo history
 set undodir=/home/yourname/.vimundo/
+
+"Clone Paragraph with cp
+noremap cp yap<S-}>p
+
+"Save File with Leader + s
+nnoremap <leader>s :w<cr>
+inoremap <leader>s <C-c>:w<cr>
+
+"Apply Macros with Q
+nnoremap Q @q
+vnoremap Q :norm @q<cr>
+
+"Quit Files with Leader + q
+noremap <leader>q :q<cr>
+
+"Align Current Paragraph with Leader + a
+noremap <leader>a =ip
