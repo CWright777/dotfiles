@@ -21,7 +21,7 @@ Plugin 'burnettk/vim-angular'
 Plugin 'tpope/vim-fugitive'
 Plugin 'vim-airline/vim-airline'
 Plugin 'christoomey/vim-tmux-navigator'
-Plugin 'repmo.vim'
+Plugin 'tpope/vim-surround'
 Plugin 'matthewsimo/angular-vim-snippets'
 
 filetype plugin indent on " Required
