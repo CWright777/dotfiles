@@ -23,6 +23,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'tpope/vim-surround'
 Plugin 'matthewsimo/angular-vim-snippets'
+Plugin 'mxw/vim-jsx'
 
 filetype plugin indent on " Required
 :set noswapfile
@@ -77,11 +78,17 @@ set nowrap
 set listchars=eol:$,nbsp:%
 set pastetoggle=<F2>
 set number
-if has('persistent_undo') && !isdirectory(expand('~').'/.vim/backups')
-  silent !mkdir ~/.vim/backups > /dev/null 2>&1
-  set undodir=~/.vim/backups
-  set undofile
+"
+"Save undo info
+if !isdirectory($HOME."/.vim")
+    call mkdir($HOME."/.vim", "", 0770)
 endif
+if !isdirectory($HOME."/.vim/undo-dir")
+    call mkdir($HOME."/.vim/undo-dir", "", 0700)
+endif
+set undodir=~/.vim/undo-dir
+set undofile
+
 set linebreak    "Wrap lines at convenient points
 let mapleader = ","
 nnoremap <leader>e :buffer NERD_tree_1<CR>
@@ -118,11 +125,6 @@ set hlsearch
 " search as characters are entered
 set incsearch
 
-" tell it to use an undo file
-set undofile
-" set a directory to store the undo history
-set undodir=/home/yourname/.vimundo/
-
 "Clone Paragraph with cp
 noremap cp yap<S-}>p
 
@@ -139,3 +141,12 @@ noremap <leader>q :q<cr>
 
 "Align Current Paragraph with Leader + a
 noremap <leader>a =ip
+
+"JSX syntax on .js file type
+let g:jsx_ext_required = 0
+
+"for crontab to prevent undo error
+if $VIM_CRONTAB == "true"
+    set nobackup
+    set nowritebackup
+endif

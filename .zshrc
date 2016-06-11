@@ -92,3 +92,7 @@ alias slateconfig="vim ~/.slate"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+#For crontab to prevent "temp file must be edited in place" error
+alias crontab="VIM_CRONTAB=true crontab"
+
