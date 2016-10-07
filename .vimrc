@@ -24,6 +24,7 @@ Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'tpope/vim-surround'
 Plugin 'matthewsimo/angular-vim-snippets'
 Plugin 'mxw/vim-jsx'
+Plugin 'scrooloose/syntastic'
 
 filetype plugin indent on " Required
 :set noswapfile
@@ -150,3 +151,18 @@ if $VIM_CRONTAB == "true"
     set nobackup
     set nowritebackup
 endif
+
+"Syntastic settings
+"let g:syntastic_mode_map = { 'mode': 'active',
+                            "\ 'active_filetypes': ['python', 'javascript'],
+                            "\ 'passive_filetypes': [] }
+
+"set statusline+=%#warningmsg#
+"set statusline+=%{SyntasticStatuslineFlag()}
+"set statusline+=%*
+
+"let g:syntastic_always_populate_loc_list = 1
+"let g:syntastic_auto_loc_list = 1
+"let g:syntastic_check_on_open = 1
+"let g:syntastic_check_on_wq = 0
+"let g:syntastic_javascript_checkers = ['eslint']

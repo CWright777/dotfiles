@@ -6,6 +6,7 @@ export ZSH=/Users/Cliff/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 ZSH_THEME="robbyrussell"
+REACT_EDITOR="vim"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -53,7 +54,7 @@ export NVM_DIR="$HOME/.nvm"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git vi-mode zsh-syntax-highlighting z nvm rvm npm rails ruby bower)
+plugins=(osx git vi-mode zsh-syntax-highlighting z nvm rvm npm rails ruby bower)
 
 # User configuration
 
