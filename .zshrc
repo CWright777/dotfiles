@@ -58,7 +58,6 @@ plugins=(osx git vi-mode zsh-syntax-highlighting z nvm rvm npm rails ruby bower)
 
 # User configuration
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -90,10 +89,27 @@ alias zshconfig="vim ~/.zshrc"
 alias vimconfig="vim ~/.vimrc"
 alias tmuxconfig="vim ~/.tmux.conf"
 alias slateconfig="vim ~/.slate"
+
+export ANDROID_HOME=/Users/cliff/Library/Android/sdk
+export ANDROID_SDK_ROOT=/Users/cliff/Library/Android/sdk
+export ANDROID_AVD_HOME=/Users/cliff/.android/avd
+
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+export GOROOT=/usr/local/go
+export GOPATH=~/workspace/go
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+
+export PGDATA='/usr/local/var/postgres'
+export PGHOST=localhost
+alias start-pg='pg_ctl -l $PGDATA/server.log start'
+alias stop-pg='pg_ctl stop -m fast'
+alias show-pg-status='pg_ctl status'
+alias restart-pg='pg_ctl reload'
 
 #For crontab to prevent "temp file must be edited in place" error
 alias crontab="VIM_CRONTAB=true crontab"
 
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools/bin:${ANDROID_SDK_ROOT}/emulator"

@@ -25,6 +25,8 @@ Plugin 'tpope/vim-surround'
 Plugin 'matthewsimo/angular-vim-snippets'
 Plugin 'mxw/vim-jsx'
 Plugin 'scrooloose/syntastic'
+Plugin 'fatih/vim-go'
+Plugin 'lambdatoast/elm.vim'
 
 filetype plugin indent on " Required
 :set noswapfile
@@ -59,7 +61,7 @@ set shiftround
 set expandtab
 
 " Display extra whitespace
-set list listchars=tab:»·,trail:·,nbsp:·
+"set list listchars=tab:»·,trail:·,nbsp:·
 
 " Map control-p to ctrlp
 let g:ctrlp_map = '<c-p>'
